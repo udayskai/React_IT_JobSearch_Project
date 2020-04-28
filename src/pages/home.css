@@ -1,0 +1,74 @@
+
+div.home-root{
+    margin: 0px 5rem;
+    /* border: 1px solid rgb(186, 223, 99); */
+}
+
+/* nav area  */
+div.navbar-box{
+    margin-bottom: 4rem;
+}
+
+
+/* ------------mid sarea--------------  */
+div.mid-box{
+    /* border: 1px solid blue; */
+    width: 100%;
+    display: flex;
+}
+
+
+/* --------------left */
+div.left-area{
+    width: 50%;
+    /* border: 1px solid rgb(175, 39, 202); */
+   
+}
+
+div.text-area  h1.left-h1{
+
+font-family: Inter;
+font-style: normal;
+font-weight: 900;
+font-size: 70px;
+line-height: 90px;
+display: flex;
+align-items: center;
+color: #000000;
+
+margin-bottom: 0.5rem;
+}
+
+div.text-area p.ptag{
+    font-family: Inter;
+    font-weight: 300;
+    /* font-size: 70px;
+    line-height: 90px; */
+    display: flex;
+    align-items: center;
+    color: #424242;
+}
+
+
+/* input area */
+
+div.input-area{
+    border: rgb(127, 128, 126) 1px solid;
+    height: 300px;
+}
+
+
+
+/* right area------------------  */
+div.right-area{
+    width: 50%;
+    /* border: 1px solid rgb(202, 18, 73); */
+}
+
+
+div.right-area img.right-imagebg{
+      /* border: 1px solid rgb(238, 135, 0); */
+      width: 100%;
+      min-width:400px;
+     
+}
