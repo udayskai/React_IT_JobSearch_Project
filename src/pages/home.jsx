@@ -3,7 +3,7 @@ import React, { Component, Fragment } from 'react';
 import Navbar from '../components/navbar/navbar'
 import './home.css'
 import backgroundImg from '../upload/bg-img.svg'
-
+import SarchArea from '../components/serachArea/search-area';
 
 class Home extends Component {
     render() {
@@ -20,6 +20,7 @@ class Home extends Component {
                     <div className="mid-box">
                         {/* left */}
                         <div className="left-area">
+
                             {/* text */}
                             <div className="text-area">
                                 <h1 className="left-h1">
@@ -29,15 +30,17 @@ class Home extends Component {
                                     Set your tech career in motion with AS
                                  </p>
                             </div>
+
                             {/* inputs */}
                             <div className="input-area">
-                                <input type="search" name="search" placeholder="Job by title,skill ..." />
+
+                                <SarchArea />
+                                {/* <input type="search" name="search" placeholder="Job by title,skill ..." />
                                 <select name="loction" value="king" id="loction" >
                                     <option name="loction" value="react">react</option>
                                     <option name="loction" value="map">Map</option>
                                     <option name="loction" value="coponent">make Component</option>
-                                </select>
-
+                                </select> */}
                             </div>
                         </div>
 

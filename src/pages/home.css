@@ -25,6 +25,11 @@ div.left-area{
    
 }
 
+/* text */
+div.text-area{
+    margin-bottom: 2.5em;
+    /* border: greenyellow 2px solid; */
+}
 div.text-area  h1.left-h1{
 
 font-family: Inter;
@@ -38,7 +43,6 @@ color: #000000;
 
 margin-bottom: 0.5rem;
 }
-
 div.text-area p.ptag{
     font-family: Inter;
     font-weight: 300;
@@ -53,8 +57,8 @@ div.text-area p.ptag{
 /* input area */
 
 div.input-area{
-    border: rgb(127, 128, 126) 1px solid;
-    height: 300px;
+    /* border: rgb(127, 128, 126) 1px solid; */
+    /* height: 300px; */
 }
 
 
