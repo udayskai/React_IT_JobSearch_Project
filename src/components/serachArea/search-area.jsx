@@ -9,7 +9,7 @@ export default class SarchArea extends Component {
         super(props)
         this.state = {
             jobSearch: "",
-            locationSearch: "Mumbai"
+            locationSearch: ""
         }
     }
 

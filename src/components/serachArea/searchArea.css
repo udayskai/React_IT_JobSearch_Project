@@ -1,72 +1,82 @@
 
 
 
-div.search-area-component{
-    /* border: 2px solid red;
-    height: 200px; */
-
-}
-
-
-form.search-area-form{
-    display: flex;
-    flex-direction:column;
-    justify-content: space-between;
-    height: fit-content;
-    /* border: 2px solid greenyellow; */
-}
+        form.search-area-form{
+        display: flex;
+        flex-direction:column;
+        justify-content: space-between;
+        height: fit-content;
+        }
 
 
+        /* submit form */
+        .submit{
+        width: 45%;
+        height: 1.7em;
+        background: rgb(63, 54, 231);
+        border-radius: 20px;
+
+        font-family: Inter;
+        font-weight: 80%;
+        font-size: 50px;
+        text-align: center;
+        color: #FFFBFB;
+        border: none;
+        outline: none;
+        }
+        .submit:hover{
+        background-image: linear-gradient(to right ,rgb(65, 58, 206) ,rgb(83, 5, 119));
+        }
+
+        
+
+        /* input element */
+        form.search-area-form div.form-input-container{
+        display: flex;
+        flex-direction:column;
+        height:5.8rem;
+        justify-content: space-between;
+        margin-bottom: 3rem;
+        }
+
+        input.ownCss{
+        border-radius: 20px;
+        outline-style: none;
+        width: 65%;
+        height: 2.3rem;
+        font-size: 1em;
+
+        padding-left: 10px;
+        border: 1px gray solid;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 500;
+        color: #414141;
+        }
 
 
 
-/* submit form */
-.submit{
-width: 323px;
-height: 5rem;
-background: rgb(63, 54, 231);
-border-radius: 20px;
-
-font-family: Inter;
-font-weight: 80%;
-font-size: 50px;
-text-align: center;
-color: #FFFBFB;
-border: none;
-outline: none;
-}
-
-.submit:hover{
-    background-image: linear-gradient(to right ,rgb(65, 58, 206) ,rgb(83, 5, 119));
-}
 
 
 
-  /* input element */
- 
-  form.search-area-form div.form-input-container{
-    display: flex;
-    flex-direction:column;
-    height:7rem;
-    justify-content: space-between;
-    /* border: 2px solid greenyellow; */
-    margin-bottom: 4rem;
-}
+        /* media */     /* media *     /* media */
+    
+        @media screen and (max-width:1260px){
 
-  input.ownCss{
-      border-radius: 20px;
-      outline-style: none;
-      height: 2rem;
+        form.search-area-form div.form-input-container{ 
+        margin-bottom: 2rem;
+        }
 
 
-width: 465px;
-height: 41px;
+        /* submit form */
+        .submit{         
+        font-size: 30px;
+        margin-bottom: 100px;
+        }
 
 
-font-size: 20px;
-line-height: 24px;
-padding-left: 10px;
-box-sizing: border-box;
+        input.ownCss{
+        width: 90%;
+        }
 
-border: 1px gray solid;
-  }
+        }
