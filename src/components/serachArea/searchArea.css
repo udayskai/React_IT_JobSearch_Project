@@ -1,26 +1,28 @@
 
-.kingo{
-        border: rgb(46, 40, 12) 2px solid;
-        background-color: rgb(73, 13, 153);
-        color: rgb(249, 249, 250);
-        line-height: 40px;
-        list-style: none;
-      padding: 8px;
-       font-size: 1.5em;
-        font-family: Inter;
-        font-style: normal;
-        font-weight: 700;
-        width: 80%;
+    
         
-}
-/* on text upper */
+        /* laoding image */
+        div.submitBox{
+        display: flex;
+        }
+        img.loading-image{
+        margin-left: 3rem;
+        width:4em;
+        height: 4em;
+        }
+        /* end loading */
 
+
+
+        /* on text upper */
         form.search-area-form{
         display: flex;
         flex-direction:column;
         justify-content: space-between;
         height: fit-content;
+        
         }
+
 
 
         /* submit form */
@@ -37,12 +39,17 @@
         color: #FFFBFB;
         border: none;
         outline: none;
+        display: inline-block;
+        cursor: pointer;
+        transition: all 0.7s  cubic-bezier(0.55, 0.86, 0.45, 0.94) ;
+
         }
         .submit:hover{
-        background-image: linear-gradient(to right ,rgb(65, 58, 206) ,rgb(83, 5, 119));
+        width: 50%;         
+        background-color: rgb(100, 3, 156);
         }
 
-        
+
 
         /* input element */
         form.search-area-form div.form-input-container{
@@ -51,8 +58,10 @@
         height:5.8rem;
         justify-content: space-between;
         margin-bottom: 3rem;
+         border: tomato 2px solid;
+       
+              
         }
-
         input.ownCss{
         border-radius: 20px;
         outline-style: none;
@@ -74,7 +83,7 @@
 
 
         /* media */     /* media *     /* media */
-    
+
         @media screen and (max-width:1260px){
 
         form.search-area-form div.form-input-container{ 
@@ -85,7 +94,7 @@
         /* submit form */
         .submit{         
         font-size: 30px;
-        margin-bottom: 100px;
+        margin-bottom: 1rem;
         }
 
 

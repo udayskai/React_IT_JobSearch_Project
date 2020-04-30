@@ -56,3 +56,9 @@ text-decoration: none;
 li.list a.signUp{
     color: #6C63FF;
 }
+
+
+li.list a.links:hover{
+    color: rgb(11, 5, 27);
+    border-bottom: rgb(60, 140, 231) 1px solid;
+}

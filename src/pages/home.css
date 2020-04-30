@@ -9,21 +9,33 @@
 
         /* nav area  */
         div.navbar-box{
+        width: 90vw;
+        position: fixed;
+        background-color: rgba(255, 255, 255, 0.964);
+        display: block;
         margin-bottom: 3.4rem;
+        z-index: 100;
         }
 
 
         /* ------------mid sarea--------------  */
+        div.body{
+                position: relative;
+                top:9.5rem;
+        }
         div.mid-box{
-        width: 100%;
-        display: flex;
-        justify-content: space-evenly;
+               
+                width: 100%;
+                display: flex;
+                justify-content: space-evenly;
+                margin-bottom: 0.5rem;
+
         }
 
 
 
 
-        /* --------------left */
+        /* --------------left ------------*/
         div.left-area{
         width: 100%;
 
@@ -31,7 +43,7 @@
 
         /* text */
         div.text-area{
-        margin-bottom: 2.9em;
+        margin-bottom: 4em;
         /* border: greenyellow 2px solid; */
         }
         div.text-area  h1.left-h1{
@@ -59,27 +71,43 @@
 
 
 
-        /* input area */
-        div.input-area{
-        /* border: rgb(238, 33, 204) 1px solid; */
-        }
-
 
         /* --------------right area------------------  */
         div.right-area{
         width: 100%;
         }
-
         div.right-area img.right-imagebg{
+         margin-top: 1rem;
         width: 100%;
-        height: 400px;
+        height: 350px;
         }
 
 
+        /* -----------------------------DOWN----------------------------------down */
+        div.bottom-cart{
+                margin-top: 0px;
+                width: 100%;
+        /* border: 1px red solid; */
 
-
-
-
+        }
+        div.root-down-cart{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        
+        }
+        p.ptag-down{
+                font-family: Inter;
+                margin-left: 2.8rem;
+                font-weight: 500;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                color: #f53030;
+                border-bottom: peru 1px solid;
+                display: inline-block;
+        }
 
 
 
@@ -96,15 +124,14 @@
         div.mid-box{
         flex-direction: column-reverse;
         border: none;
+        border: rgb(165, 123, 45) 1px solid;
+        /* margin-bottom: 0px; */
 
         } 
 
 
         /* img */
-        div.right-area{
-        /* border: 2px solid rgb(42, 218, 26); */
-        }
-
+      
 
         /* navbar */
         div.navbar-container{
