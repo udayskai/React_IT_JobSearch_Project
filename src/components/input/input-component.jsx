@@ -5,7 +5,7 @@ import React, { Fragment } from 'react'
 export default function Input(props) {
 
     let { label, onChange, value, className, ...restProps } = props;
-    console.log(value, "input component")
+    // console.log(value, "input component")
 
     return (
         <Fragment>

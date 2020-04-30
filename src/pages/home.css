@@ -2,6 +2,8 @@
         div.home-root{
         margin: 0px auto;
         width: 90%;
+        /* in test */
+        scroll-behavior: smooth;
 
         }
 
@@ -102,8 +104,6 @@
         div.right-area{
         /* border: 2px solid rgb(42, 218, 26); */
         }
-
-        
 
 
         /* navbar */

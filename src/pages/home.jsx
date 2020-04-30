@@ -6,6 +6,9 @@ import backgroundImg from '../upload/bg-img.svg'
 import SarchArea from '../components/serachArea/search-area';
 
 class Home extends Component {
+
+
+
     render() {
         return (
             <Fragment>

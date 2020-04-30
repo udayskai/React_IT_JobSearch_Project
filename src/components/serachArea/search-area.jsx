@@ -9,14 +9,19 @@ export default class SarchArea extends Component {
         super(props)
         this.state = {
             jobSearch: "",
-            locationSearch: ""
+            locationSearch: "",
+            arrayData: {}
         }
     }
 
 
+    componentDidMount() {
+        console.log("did mount");
+
+    }
+
     // Onchange Method
     onChnageMethod = (e) => {
-        console.log(e.target.name, "---")
         this.setState({ [e.target.name]: e.target.value })
     }
 
@@ -24,17 +29,33 @@ export default class SarchArea extends Component {
     // Submit Method
     onSubmitMethod = (event) => {
         event.preventDefault();
-        let data = {
-            job: this.state.jobSearch,
-            location: this.state.locationSearch
-        }
-        console.log(data, "Submit is clicked")
+
+
+        fetch(`https://api.adzuna.com/v1/api/jobs/in/search/1?app_id=676a2fe3&app_key=9179830580f086ad10d03d11fd587da8%09&results_per_page=50&what=${this.state.jobSearch}&title_only=${this.state.jobSearch}}&where=${this.state.locationSearch}}&distance=20`)
+            .then((res) => res.json())
+            .then((data) => this.setState({ arrayData: data }))
+
     }
 
     render() {
+        console.log(this.state.arrayData, "Submit is clicked")
+
+        let data = this.state.arrayData;
+
+        if (data.results) {
+            console.log("licked")
+            data.results.map((items) =>
+                console.log(items.company.display_name)
+            )
+        }
+
+
+
+
         return (
             <Fragment>
                 <div className="search-area-component">
+
                     <form onSubmit={this.onSubmitMethod} className="search-area-form">
                         <div className="form-input-container">
                             <Input
@@ -54,8 +75,10 @@ export default class SarchArea extends Component {
                             />
                         </div>
 
+
                         <input type="submit" value="Submit" className="submit" />
                     </form>
+
                 </div>
             </Fragment>
         )
