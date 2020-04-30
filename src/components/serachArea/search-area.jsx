@@ -42,12 +42,12 @@ export default class SarchArea extends Component {
 
         let data = this.state.arrayData;
 
-        if (data.results) {
-            console.log("licked")
-            data.results.map((items) =>
-                console.log(items.company.display_name)
-            )
-        }
+        // if (data.results) {
+        //     console.log("licked")
+        //     data.results.map((items) =>
+        //         console.log(items.company.display_name)
+        //     )
+        // }
 
 
 
@@ -79,6 +79,28 @@ export default class SarchArea extends Component {
                         <input type="submit" value="Submit" className="submit" />
                     </form>
 
+                    {/* test start */}
+                    {
+                        data.results ?
+                            <div>
+                                {
+                                    data.results.map((e) => {
+                                        return (
+                                            <ul key={e.id} >
+                                                <li className="kingo">
+                                                    <h4>
+                                                        {e.company.display_name}
+                                                    </h4>
+                                                </li>
+                                                <br></br>
+                                            </ul>
+                                        )
+                                    })
+                                }
+                            </div>
+                            : null
+                    }
+                    {/* test end */}
                 </div>
             </Fragment>
         )

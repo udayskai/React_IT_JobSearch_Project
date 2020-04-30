@@ -1,5 +1,19 @@
 
-
+.kingo{
+        border: rgb(46, 40, 12) 2px solid;
+        background-color: rgb(73, 13, 153);
+        color: rgb(249, 249, 250);
+        line-height: 40px;
+        list-style: none;
+      padding: 8px;
+       font-size: 1.5em;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 700;
+        width: 80%;
+        
+}
+/* on text upper */
 
         form.search-area-form{
         display: flex;
