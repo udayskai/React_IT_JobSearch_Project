@@ -124,7 +124,7 @@
         div.mid-box{
         flex-direction: column-reverse;
         border: none;
-        border: rgb(165, 123, 45) 1px solid;
+        /* border: rgb(165, 123, 45) 1px solid; */
         /* margin-bottom: 0px; */
 
         } 
